@@ -5,21 +5,24 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+  <div class="main">
   <h1>Software Testing Website</h1>
+  <div class="myrules">
+  <label class="label" for="integerList">Enter a list of integers:</label>
+  <input type="text" id="integerList" placeholder="e.g., 1, 2, 3, 4, 5">
   
-  <div class="input-container">
-    <label for="integerList">Enter a list of integers:</label>
-    <input type="text" id="integerList" placeholder="e.g., 1, 2, 3, 4, 5">
-  </div>
+  <button onclick="sortList()">Sort</button>
+  <button onclick="calculateMinimum()">Minimum</button>
+  <button onclick="calculateMaximum()">Maximum</button>
+  <button onclick="calculatePrimeNumbers()">Prime Numbers</button>
+  <button onclick="calculateMean()">Mean</button>
+  <button onclick="calculateMedian()">Median</button>
   
-  <div class="button-container">
-    <button onclick="sortList()">Sort</button>
-    <button onclick="calculateMinimum()">Minimum</button>
-    <button onclick="calculateAverage()">Average</button>
-  </div>
-  
-  <div id="output" class="output-container"></div>
+  <div id="output"></div>
   
   <script src="script.js"></script>
+</div>
+</div>
 </body>
 </html>
+

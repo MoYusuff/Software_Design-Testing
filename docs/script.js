@@ -60,12 +60,7 @@ function calculateMedian() {
   displayOutput(median);
 }
 
-function parseInput(input) {
-  var inputArray = input.split(",").map(function(item) {
-    return parseInt(item.trim(), 10);
-  });
-  return inputArray;
-}
+
 
 function findPrimeNumbers(numbers) {
   document.getElementById('output').style.display = "block";
@@ -110,40 +105,46 @@ function calculateMode() {
   displayOutput(mode);
 }
 
-function calculateRange() {
-  var input = document.getElementById("integerList").value;
-  var integers = parseInput(input);
-  var range = Math.max(...integers) - Math.min(...integers);
-  displayOutput(range);
-}
+// function calculateRange() {
+//   var input = document.getElementById("integerList").value;
+//   var integers = parseInput(input);
+//   var range = Math.max(...integers) - Math.min(...integers);
+//   displayOutput(range);
+// }
 
-function calculateSum() {
-  var input = document.getElementById("integerList").value;
-  var integers = parseInput(input);
-  var sum = integers.reduce(function(a, b) {
-    return a + b;
-  }, 0);
-  displayOutput(sum);
-}
+// function calculateSum() {
+//   var input = document.getElementById("integerList").value;
+//   var integers = parseInput(input);
+//   var sum = integers.reduce(function(a, b) {
+//     return a + b;
+//   }, 0);
+//   displayOutput(sum);
+// }
 
-function calculateEven() {
-  var input = document.getElementById("integerList").value;
-  var integers = parseInput(input);
-  var evenNumbers = integers.filter(function(num) {
-    return num % 2 === 0;
+// function calculateEven() {
+//   var input = document.getElementById("integerList").value;
+//   var integers = parseInput(input);
+//   var evenNumbers = integers.filter(function(num) {
+//     return num % 2 === 0;
+//   });
+//   displayOutput(evenNumbers);
+// }
+
+// function calculateOdd() {
+//   var input = document.getElementById("integerList").value;
+//   var integers = parseInput(input);
+//   var oddNumbers = integers.filter(function(num) {
+//     return num % 2 !== 0;
+//   });
+//   displayOutput(oddNumbers);
+// }
+
+function parseInput(input) {
+  var inputArray = input.split(",").map(function(item) {
+    return parseInt(item.trim(), 10);
   });
-  displayOutput(evenNumbers);
+  return inputArray;
 }
-
-function calculateOdd() {
-  var input = document.getElementById("integerList").value;
-  var integers = parseInput(input);
-  var oddNumbers = integers.filter(function(num) {
-    return num % 2 !== 0;
-  });
-  displayOutput(oddNumbers);
-}
-
 function displayOutput(output) {
   var outputElement = document.getElementById("output");
   outputElement.innerHTML = "Output: " + output;

@@ -1,13 +1,20 @@
 body {
-  
+  background-image: url('img1.jpg');
+  box-sizing: border-box;
+  text-align: center;
   color: black;
   font-family: Arial, sans-serif;
   margin: 20px;
+  padding: 0;
+  border:5px solid black;
+  height: 100vh;
 }
 
 .main{
   background-image: url('img1.jpg');
   opacity: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
 }
 
 .myrules{
@@ -22,24 +29,25 @@ label {
   display: block;
   margin-bottom: 5px;
   font-size: 1.5rem;
+  font-style: inherit;
 }
 
 input[type="text"] {
-  padding: 10px;
+  padding: 10px 15px;
   background-color: rgb(243, 243, 234);
   border: 3px solid green;
   width: 400px;
-  font-size: 15px;
   border-radius: 15px;
   margin-bottom: 10px;
   text-decoration: none !important;
+  font-size: 1.3rem;
 }
 
 button {
-  width: 150px;
-  font-size: 1rem;
+  width: 190px;
+  font-size: 1.2rem;
   border-radius: 10px;
-  padding: 8px 16px;
+  padding: 8px 25px;
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -49,12 +57,13 @@ button {
 
 #output {
   margin-top: 20px;
-  width: 300px;
-  
+
   border: 3px solid green;
   border-radius: 15px;
-  padding: 15px;
-  
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: rgb(240, 233, 224);
 }
 #output:hover{
   cursor: pointer;

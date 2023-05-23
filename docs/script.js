@@ -1,4 +1,5 @@
 function sortList() {
+  document.getElementById('output').style.display = "block";
   var input = document.getElementById("integerList").value;
   var integers = parseInput(input);
   integers.sort(function(a, b) {
@@ -8,6 +9,7 @@ function sortList() {
 }
 
 function calculateMinimum() {
+  document.getElementById('output').style.display = "block";
   var input = document.getElementById("integerList").value;
   var integers = parseInput(input);
   var minimum = Math.min(...integers);
@@ -15,6 +17,7 @@ function calculateMinimum() {
 }
 
 function calculateMaximum() {
+  document.getElementById('output').style.display = "block";
   var input = document.getElementById("integerList").value;
   var integers = parseInput(input);
   var maximum = Math.max(...integers);
@@ -22,6 +25,7 @@ function calculateMaximum() {
 }
 
 function calculatePrimeNumbers() {
+  document.getElementById('output').style.display = "block";
   var input = document.getElementById("integerList").value;
   var integers = parseInput(input);
   var primeNumbers = findPrimeNumbers(integers);
@@ -29,6 +33,7 @@ function calculatePrimeNumbers() {
 }
 
 function calculateMean() {
+  document.getElementById('output').style.display = "block";
   var input = document.getElementById("integerList").value;
   var integers = parseInput(input);
   var sum = integers.reduce(function(a, b) {
@@ -63,6 +68,7 @@ function parseInput(input) {
 }
 
 function findPrimeNumbers(numbers) {
+  document.getElementById('output').style.display = "block";
   var primes = [];
   for (var i = 0; i < numbers.length; i++) {
     var num = numbers[i];
@@ -74,6 +80,7 @@ function findPrimeNumbers(numbers) {
 }
 
 function isPrime(number) {
+  document.getElementById('output').style.display = "block";
   if (number < 2) {
     return false;
   }

@@ -91,6 +91,58 @@ function isPrime(number) {
   }
   return true;
 }
+function calculateMode() {
+  var input = document.getElementById("integerList").value;
+  var integers = parseInput(input);
+  var counts = {};
+  var mode = [];
+  var maxCount = 0;
+  for (var i = 0; i < integers.length; i++) {
+    var num = integers[i];
+    counts[num] = (counts[num] || 0) + 1;
+    if (counts[num] > maxCount) {
+      maxCount = counts[num];
+      mode = [num];
+    } else if (counts[num] === maxCount) {
+      mode.push(num);
+    }
+  }
+  displayOutput(mode);
+}
+
+function calculateRange() {
+  var input = document.getElementById("integerList").value;
+  var integers = parseInput(input);
+  var range = Math.max(...integers) - Math.min(...integers);
+  displayOutput(range);
+}
+
+function calculateSum() {
+  var input = document.getElementById("integerList").value;
+  var integers = parseInput(input);
+  var sum = integers.reduce(function(a, b) {
+    return a + b;
+  }, 0);
+  displayOutput(sum);
+}
+
+function calculateEven() {
+  var input = document.getElementById("integerList").value;
+  var integers = parseInput(input);
+  var evenNumbers = integers.filter(function(num) {
+    return num % 2 === 0;
+  });
+  displayOutput(evenNumbers);
+}
+
+function calculateOdd() {
+  var input = document.getElementById("integerList").value;
+  var integers = parseInput(input);
+  var oddNumbers = integers.filter(function(num) {
+    return num % 2 !== 0;
+  });
+  displayOutput(oddNumbers);
+}
 
 function displayOutput(output) {
   var outputElement = document.getElementById("output");

@@ -23,6 +23,15 @@ function calculateMaximum() {
   var maximum = Math.max(...integers);
   displayOutput(maximum);
 }
+function calculateAverage() {
+  var input = document.getElementById("integerList").value;
+  var integers = parseInput(input);
+  var sum = integers.reduce(function(a, b) {
+    return a + b;
+  }, 0);
+  var average = sum / integers.length;
+  displayOutput(average);
+}
 
 function calculatePrimeNumbers() {
   document.getElementById('output').style.display = "block";

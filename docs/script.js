@@ -32,33 +32,33 @@ function calculatePrimeNumbers() {
   displayOutput(primeNumbers);
 }
 
-function calculateMean() {
-  document.getElementById('output').style.display = "block";
-  var input = document.getElementById("integerList").value;
-  var integers = parseInput(input);
-  var sum = integers.reduce(function(a, b) {
-    return a + b;
-  }, 0);
-  var mean = sum / integers.length;
-  displayOutput(mean);
-}
+// function calculateMean() {
+//   document.getElementById('output').style.display = "block";
+//   var input = document.getElementById("integerList").value;
+//   var integers = parseInput(input);
+//   var sum = integers.reduce(function(a, b) {
+//     return a + b;
+//   }, 0);
+//   var mean = sum / integers.length;
+//   displayOutput(mean);
+// }
 
-function calculateMedian() {
-  var input = document.getElementById("integerList").value;
-  var integers = parseInput(input);
-  integers.sort(function(a, b) {
-    return a - b;
-  });
-  var median;
-  if (integers.length % 2 === 0) {
-    var middle = integers.length / 2;
-    median = (integers[middle - 1] + integers[middle]) / 2;
-  } else {
-    var middleIndex = Math.floor(integers.length / 2);
-    median = integers[middleIndex];
-  }
-  displayOutput(median);
-}
+// function calculateMedian() {
+//   var input = document.getElementById("integerList").value;
+//   var integers = parseInput(input);
+//   integers.sort(function(a, b) {
+//     return a - b;
+//   });
+//   var median;
+//   if (integers.length % 2 === 0) {
+//     var middle = integers.length / 2;
+//     median = (integers[middle - 1] + integers[middle]) / 2;
+//   } else {
+//     var middleIndex = Math.floor(integers.length / 2);
+//     median = integers[middleIndex];
+//   }
+//   displayOutput(median);
+// }
 
 
 
@@ -86,24 +86,33 @@ function isPrime(number) {
   }
   return true;
 }
-function calculateMode() {
+function calculateAverage() {
   var input = document.getElementById("integerList").value;
   var integers = parseInput(input);
-  var counts = {};
-  var mode = [];
-  var maxCount = 0;
-  for (var i = 0; i < integers.length; i++) {
-    var num = integers[i];
-    counts[num] = (counts[num] || 0) + 1;
-    if (counts[num] > maxCount) {
-      maxCount = counts[num];
-      mode = [num];
-    } else if (counts[num] === maxCount) {
-      mode.push(num);
-    }
-  }
-  displayOutput(mode);
+  var sum = integers.reduce(function(a, b) {
+    return a + b;
+  }, 0);
+  var average = sum / integers.length;
+  displayOutput(average);
 }
+// function calculateMode() {
+//   var input = document.getElementById("integerList").value;
+//   var integers = parseInput(input);
+//   var counts = {};
+//   var mode = [];
+//   var maxCount = 0;
+//   for (var i = 0; i < integers.length; i++) {
+//     var num = integers[i];
+//     counts[num] = (counts[num] || 0) + 1;
+//     if (counts[num] > maxCount) {
+//       maxCount = counts[num];
+//       mode = [num];
+//     } else if (counts[num] === maxCount) {
+//       mode.push(num);
+//     }
+//   }
+//   displayOutput(mode);
+// }
 
 // function calculateRange() {
 //   var input = document.getElementById("integerList").value;

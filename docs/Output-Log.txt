@@ -1,0 +1,96 @@
+    Running 'Case 1'
+    17:50:53
+    1.open on https://moyusuff.github.io/Software_Design_Testing/ OK
+    17:50:54
+    2.setWindowSize on 1550x838 OK
+    17:50:54
+    3.click on id=integerList OK
+    17:50:54
+    4.type on xpath=//input[@id='integerList'] with value 4,9,2,5,7 OK
+    17:50:55
+    5.click on css=button:nth-child(3) OK
+    17:50:55
+    6.waitForElementPresent on id=output with value 2,4,5,7,9 OK
+    17:50:55
+    8.click on css=button:nth-child(4) OK
+    17:50:56
+    9.waitForElementPresent on id=output with value 2 OK
+    17:50:56
+    10.click on css=button:nth-child(5) OK
+    17:50:57
+    11.waitForElementPresent on id=output with value 9 OK
+    17:50:57
+    12.click on css=button:nth-child(6) OK
+    17:50:58
+    13.waitForElementPresent on id=output with value 5.4 OK
+    17:50:58
+    14.click on css=button:nth-child(7) OK
+    17:50:58
+    15.waitForElementPresent on id=output with value 2,5,7 OK
+    17:50:58
+    'Case 1' completed successfully
+    17:50:59
+    Running 'Case 2'
+    17:50:59
+    1.open on https://moyusuff.github.io/Software_Design_Testing/ OK
+    17:50:59
+    2.setWindowSize on 1550x838 OK
+    17:50:59
+    3.click on id=integerList OK
+    17:50:59
+    4.type on xpath=//input[@id='integerList'] with value -1,0,49,51,99,101 OK
+    17:51:00
+    5.click on css=button:nth-child(3) OK
+    17:51:00
+    6.waitForElementPresent on id=output with value -1,0,49,51,99,101 OK
+    17:51:01
+    7.click on css=button:nth-child(4) OK
+    17:51:01
+    8.waitForElementPresent on id=output with value - 1 OK
+    17:51:01
+    9.click on css=button:nth-child(5) OK
+    17:51:01
+    10.waitForElementPresent on id=output with value 101 OK
+    17:51:01
+    11.click on css=button:nth-child(6) OK
+    17:51:02
+    12.waitForElementPresent on id=output with value 49.833333333333336 OK
+    17:51:02
+    13.click on css=button:nth-child(7) OK
+    17:51:02
+    14.waitForElementPresent on id=output with value 101 OK
+    17:51:02
+    'Case 2' completed successfully
+    17:51:03
+    Running 'Case 3'
+    17:51:03
+    1.open on https://moyusuff.github.io/Software_Design_Testing/ OK
+    17:51:03
+    2.setWindowSize on 1550x838 OK
+    17:51:03
+    3.click on id=integerList OK
+    17:51:03
+    4.type on xpath=//input[@id='integerList'] with value 12,5,21,1001,625,113 OK
+    17:51:04
+    5.click on css=button:nth-child(3) OK
+    17:51:04
+    6.waitForElementPresent on id=output with value 5,12,21,113,625,1001 OK
+    17:51:04
+    7.click on css=button:nth-child(4) OK
+    17:51:05
+    8.waitForElementPresent on id=output with value 5 OK
+    17:51:05
+    9.click on css=button:nth-child(5) OK
+    17:51:05
+    10.waitForElementPresent on id=output with value 1001 OK
+    17:51:05
+    11.click on css=button:nth-child(6) OK
+    17:51:06
+    12.waitForElementPresent on id=output with value 296.1666666666667 OK
+    17:51:06
+    13.click on css=button:nth-child(7) OK
+    17:51:06
+    14.waitForElementPresent on id=output with value 5,113 OK
+    17:51:06
+    'Case 3' completed successfully
+    17:51:07
